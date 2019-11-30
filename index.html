@@ -1,1334 +1,1355 @@
 <doctype HTML>
-<html>
-    <head>
-        <!--bootstrapping for wells-->
-           <meta charset="utf-8">
-           <meta name="viewport" content="width=device-width, initial-scale=1">
-           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <!--end bootstrapping for wells-->
-
-        <div class="well">
-            <h1>Practice for Spanish 1 Semester 1 Final Exam</h1>
-            <p>Conjugation of Verbs (<i>ser</i> and <i>estar</i> will be on a separate practice page)</p>
-        </div>
-
-    </head>
-
-
-
-    <body>
-
-        <h2 style="padding-left: 10px">Practicing common <u>regular</u> present tense conjugations</h2>
-        <p style="padding-left: 10px">Complete the following tables with the appropriate conjugations. <b>Make sure to add accents</b> where applicable</p>
-
-
-        <!--BEGIN ROW 1-->
-        <div class="col-sm-4 well">
-            <h3 style="text-align: center"><b>Andar</b> (to walk)</h3>
-            <br>
-            <form role="form">
-
-                <div class="form-group row">
-                    <label for="regconjq1_yo" class="col-sm-3" style="text-align: right">Yo</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq1_yo" style="width: 20%">
-                    <label for="regconjq1_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq1_nos" style="width: 20%">
+        <html>
+            <head>
+                <!--bootstrapping for wells-->
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                <!--end bootstrapping for wells-->
+        
+                <div class="well">
+                    <h1>Practice for Spanish 1 Semester 1 Final Exam, CBHS 2019-2020</h1>
+                    <p>Original practice questions and answers</p>
                 </div>
-
-                <div class="form-group row">
-                    <label for="regconjq1_tu" class="col-sm-3" style="text-align: right">Tú</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq1_tu" style="width: 20%">
-                    <label for="regconjq1_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq1_vos" style="width: 20%">
+        
+            </head>
+        
+        
+        
+            <body>
+        
+                <h2 style="padding-left: 10px">Practicing common <u>regular</u> present tense conjugations</h2>
+                <p style="padding-left: 10px">Complete the following tables with the appropriate conjugations. <b>Make sure to add accents</b> where applicable</p>
+        
+        
+                <!--BEGIN ROW 1-->
+                <div class="row">
+                <div class="col-sm-6 well" style="background: lightgrey">
+                    <br>
+                    <h3 style="text-align: center"><b>Andar</b> (to walk)</h3>
+                    <br>
+                    <form role="form">
+        
+                        <div class="form-group row">
+                            <label for="regconjq1_yo" class="col-sm-3" style="text-align: right">Yo</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq1_yo" style="width: 20%">
+                            <label for="regconjq1_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq1_nos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="regconjq1_tu" class="col-sm-3" style="text-align: right">Tú</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq1_tu" style="width: 20%">
+                            <label for="regconjq1_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq1_vos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="regconjq1_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq1_udelella" style="width: 20%">
+                            <label for="regconjq1_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq1_udsloslas" style="width: 20%">
+                        </div>
+        
+                        <br>
+                        <button type="button" class="btn btn-primary btn-block" onclick="regconjq1()">Submit</button>
+        
+                    </form>
+        
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Yo</p>
+                        <p id="regconjq1_yo_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Tú</p>
+                        <p id="regconjq1_tu_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
+                        <p id="regconjq1_udelella_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Nosotros</p>
+                        <p id="regconjq1_nos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Vosotros</p>
+                        <p id="regconjq1_vos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
+                        <p id="regconjq1_udsloslas_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <script>
+                        function regconjq1() {
+        
+                            var rcq1_yo = document.getElementById("regconjq1_yo").value;
+                            var rcq1_tu = document.getElementById("regconjq1_tu").value;
+                            var rcq1_udelella = document.getElementById("regconjq1_udelella").value;
+                            var rcq1_nos = document.getElementById("regconjq1_nos").value;
+                            var rcq1_vos = document.getElementById("regconjq1_vos").value;
+                            var rcq1_udsloslas = document.getElementById("regconjq1_udsloslas").value;
+                            var rcq1_yo_ans, rcq1_tu_ans, rcq1_udelella_ans, rcq1_nos_ans, rcq1_vos_ans, rcq1_udsloslas_ans;
+        
+                            if (rcq1_yo == "ando" || rcq1_yo == "Ando") {
+                                rcq1_yo_ans = "CORRECT";
+                            } else {
+                                rcq1_yo_ans = "INCORRECT";
+                            }
+        
+                            if (rcq1_tu == "andas" || rcq1_tu == "Andas") {
+                                rcq1_tu_ans = "CORRECT";
+                            } else {
+                                rcq1_tu_ans = "INCORRECT";
+                            }
+        
+                            if (rcq1_udelella == "anda" || rcq1_udelella == "Anda") {
+                                rcq1_udelella_ans = "CORRECT";
+                            } else {
+                                rcq1_udelella_ans = "INCORRECT";
+                            }
+        
+                            if (rcq1_nos == "andamos" || rcq1_nos == "Andamos") {
+                                rcq1_nos_ans = "CORRECT";
+                            } else {
+                                rcq1_nos_ans = "INCORRECT";
+                            }
+        
+                            if (rcq1_vos == "andáis" || rcq1_vos == "Andáis") {
+                                rcq1_vos_ans = "CORRECT";
+                            } else {
+                                rcq1_vos_ans = "INCORRECT";
+                            }
+        
+                            if (rcq1_udsloslas == "andan" || rcq1_udsloslas == "Andan") {
+                                rcq1_udsloslas_ans = "CORRECT";
+                            } else {
+                                rcq1_udsloslas_ans = "INCORRECT";
+                            }
+        
+                            document.getElementById("regconjq1_yo_ans").innerHTML = rcq1_yo_ans;
+                            document.getElementById("regconjq1_tu_ans").innerHTML = rcq1_tu_ans;
+                            document.getElementById("regconjq1_udelella_ans").innerHTML = rcq1_udelella_ans;
+                            document.getElementById("regconjq1_nos_ans").innerHTML = rcq1_nos_ans;
+                            document.getElementById("regconjq1_vos_ans").innerHTML = rcq1_vos_ans;
+                            document.getElementById("regconjq1_udsloslas_ans").innerHTML = rcq1_udsloslas_ans;
+                        }
+                    </script>
                 </div>
-
-                <div class="form-group row">
-                    <label for="regconjq1_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq1_udelella" style="width: 20%">
-                    <label for="regconjq1_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq1_udsloslas" style="width: 20%">
-                </div>
-
-                <br>
-                <button type="button" class="btn btn-primary btn-block" onclick="regconjq1()">Submit</button>
-
-            </form>
-
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Yo</p>
-                <p id="regconjq1_yo_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Tú</p>
-                <p id="regconjq1_tu_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
-                <p id="regconjq1_udelella_ans" class="col-sm-2"></p>
-            </div>
-
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Nosotros</p>
-                <p id="regconjq1_nos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Vosotros</p>
-                <p id="regconjq1_vos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
-                <p id="regconjq1_udsloslas_ans" class="col-sm-2"></p>
-            </div>
-
-            <script>
-                function regconjq1() {
-
-                    var rcq1_yo = document.getElementById("regconjq1_yo").value;
-                    var rcq1_tu = document.getElementById("regconjq1_tu").value;
-                    var rcq1_udelella = document.getElementById("regconjq1_udelella").value;
-                    var rcq1_nos = document.getElementById("regconjq1_nos").value;
-                    var rcq1_vos = document.getElementById("regconjq1_vos").value;
-                    var rcq1_udsloslas = document.getElementById("regconjq1_udsloslas").value;
-                    var rcq1_yo_ans, rcq1_tu_ans, rcq1_udelella_ans, rcq1_nos_ans, rcq1_vos_ans, rcq1_udsloslas_ans;
-
-                    if (rcq1_yo == "ando" || rcq1_yo == "Ando") {
-                        rcq1_yo_ans = "CORRECT";
-                    } else {
-                        rcq1_yo_ans = "INCORRECT";
-                    }
-
-                    if (rcq1_tu == "andas" || rcq1_tu == "Andas") {
-                        rcq1_tu_ans = "CORRECT";
-                    } else {
-                        rcq1_tu_ans = "INCORRECT";
-                    }
-
-                    if (rcq1_udelella == "anda" || rcq1_udelella == "Anda") {
-                        rcq1_udelella_ans = "CORRECT";
-                    } else {
-                        rcq1_udelella_ans = "INCORRECT";
-                    }
-
-                    if (rcq1_nos == "andamos" || rcq1_nos == "Andamos") {
-                        rcq1_nos_ans = "CORRECT";
-                    } else {
-                        rcq1_nos_ans = "INCORRECT";
-                    }
-
-                    if (rcq1_vos == "andáis" || rcq1_vos == "Andáis") {
-                        rcq1_vos_ans = "CORRECT";
-                    } else {
-                        rcq1_vos_ans = "INCORRECT";
-                    }
-
-                    if (rcq1_udsloslas == "andan" || rcq1_udsloslas == "Andan") {
-                        rcq1_udsloslas_ans = "CORRECT";
-                    } else {
-                        rcq1_udsloslas_ans = "INCORRECT";
-                    }
-
-                    document.getElementById("regconjq1_yo_ans").innerHTML = rcq1_yo_ans;
-                    document.getElementById("regconjq1_tu_ans").innerHTML = rcq1_tu_ans;
-                    document.getElementById("regconjq1_udelella_ans").innerHTML = rcq1_udelella_ans;
-                    document.getElementById("regconjq1_nos_ans").innerHTML = rcq1_nos_ans;
-                    document.getElementById("regconjq1_vos_ans").innerHTML = rcq1_vos_ans;
-                    document.getElementById("regconjq1_udsloslas_ans").innerHTML = rcq1_udsloslas_ans;
-                }
-            </script>
-        </div>
-
-
-        <div class="col-sm-4 well">
-            <h3 style="text-align: center"><b>Comer</b> (to eat)</h3>
-            <br>
-            <form role="form">
-
-                <div class="form-group row">
-                    <label for="regconjq2_yo" class="col-sm-3" style="text-align: right">Yo</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq2_yo" style="width: 20%">
-                    <label for="regconjq2_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq2_nos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="regconjq2_tu" class="col-sm-3" style="text-align: right">Tú</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq2_tu" style="width: 20%">
-                    <label for="regconjq2_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq2_vos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="regconjq2_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq2_udelella" style="width: 20%">
-                    <label for="regconjq2_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq2_udsloslas" style="width: 20%">
-                </div>
-
-                <br>
-                <button type="button" class="btn btn-primary btn-block" onclick="regconjq2()">Submit</button>
-
-            </form>
+        
+        
+                <div class="col-sm-6 well" style="background: lightgray">
+                    <br>
+                    <h3 style="text-align: center"><b>Comer</b> (to eat)</h3>
+                    <br>
+                    <form role="form">
+        
+                        <div class="form-group row">
+                            <label for="regconjq2_yo" class="col-sm-3" style="text-align: right">Yo</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq2_yo" style="width: 20%">
+                            <label for="regconjq2_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq2_nos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="regconjq2_tu" class="col-sm-3" style="text-align: right">Tú</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq2_tu" style="width: 20%">
+                            <label for="regconjq2_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq2_vos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="regconjq2_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq2_udelella" style="width: 20%">
+                            <label for="regconjq2_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq2_udsloslas" style="width: 20%">
+                        </div>
+        
+                        <br>
+                        <button type="button" class="btn btn-primary btn-block" onclick="regconjq2()">Submit</button>
+        
+                    </form>
+                    
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Yo</p>
+                        <p id="regconjq2_yo_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Tú</p>
+                        <p id="regconjq2_tu_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
+                        <p id="regconjq2_udelella_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Nosotros</p>
+                        <p id="regconjq2_nos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Vosotros</p>
+                        <p id="regconjq2_vos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
+                        <p id="regconjq2_udsloslas_ans" class="col-sm-2"></p>
+                    </div>
             
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Yo</p>
-                <p id="regconjq2_yo_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Tú</p>
-                <p id="regconjq2_tu_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
-                <p id="regconjq2_udelella_ans" class="col-sm-2"></p>
-            </div>
-
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Nosotros</p>
-                <p id="regconjq2_nos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Vosotros</p>
-                <p id="regconjq2_vos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
-                <p id="regconjq2_udsloslas_ans" class="col-sm-2"></p>
-            </div>
-    
-            <script>
-                function regconjq2() {
-
-                    var rcq2_yo = document.getElementById("regconjq2_yo").value;
-                    var rcq2_tu = document.getElementById("regconjq2_tu").value;
-                    var rcq2_udelella = document.getElementById("regconjq2_udelella").value;
-                    var rcq2_nos = document.getElementById("regconjq2_nos").value;
-                    var rcq2_vos = document.getElementById("regconjq2_vos").value;
-                    var rcq2_udsloslas = document.getElementById("regconjq2_udsloslas").value;
-                    var rcq2_yo_ans, rcq2_tu_ans, rcq2_udelella_ans, rcq2_nos_ans, rcq2_vos_ans, rcq2_udsloslas_ans;
-
-                    if (rcq2_yo == "como" || rcq2_yo == "Como") {
-                        rcq2_yo_ans = "CORRECT";
-                    } else {
-                        rcq2_yo_ans = "INCORRECT";
-                    }
-
-                    if (rcq2_tu == "comes" || rcq2_tu == "Comes") {
-                        rcq2_tu_ans = "CORRECT";
-                    } else {
-                        rcq2_tu_ans = "INCORRECT";
-                    }
-
-                    if (rcq2_udelella == "come" || rcq2_udelella == "Come") {
-                        rcq2_udelella_ans = "CORRECT";
-                    } else {
-                        rcq2_udelella_ans = "INCORRECT";
-                    }
-
-                    if (rcq2_nos == "comemos" || rcq2_nos == "Comemos") {
-                        rcq2_nos_ans = "CORRECT";
-                    } else {
-                        rcq2_nos_ans = "INCORRECT";
-                    }
-
-                    if (rcq2_vos == "coméis" || rcq2_vos == "Coméis") {
-                        rcq2_vos_ans = "CORRECT";
-                    } else {
-                        rcq2_vos_ans = "INCORRECT";
-                    }
-
-                    if (rcq2_udsloslas == "comen" || rcq2_udsloslas == "Comen") {
-                        rcq2_udsloslas_ans = "CORRECT";
-                    } else {
-                        rcq2_udsloslas_ans = "INCORRECT";
-                    }
-
-                    document.getElementById("regconjq2_yo_ans").innerHTML = rcq2_yo_ans;
-                    document.getElementById("regconjq2_tu_ans").innerHTML = rcq2_tu_ans;
-                    document.getElementById("regconjq2_udelella_ans").innerHTML = rcq2_udelella_ans;
-                    document.getElementById("regconjq2_nos_ans").innerHTML = rcq2_nos_ans;
-                    document.getElementById("regconjq2_vos_ans").innerHTML = rcq2_vos_ans;
-                    document.getElementById("regconjq2_udsloslas_ans").innerHTML = rcq2_udsloslas_ans;
-                }
-            </script>
-        </div>
-
-
-        <div class="col-sm-4 well">
-            <h3 style="text-align: center"><b>Escribir</b> (to write)</h3>
-            <br>
-            <form role="form">
-
-                <div class="form-group row">
-                    <label for="regconjq3_yo" class="col-sm-3" style="text-align: right">Yo</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq3_yo" style="width: 20%">
-                    <label for="regconjq3_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq3_nos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="regconjq3_tu" class="col-sm-3" style="text-align: right">Tú</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq3_tu" style="width: 20%">
-                    <label for="regconjq3_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq3_vos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="regconjq3_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq3_udelella" style="width: 20%">
-                    <label for="regconjq3_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq3_udsloslas" style="width: 20%">
-                </div>
-
-                <br>
-                <button type="button" class="btn btn-primary btn-block" onclick="regconjq3()">Submit</button>
-           
-            </form>   
-                        
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Yo</p>
-                <p id="regconjq3_yo_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Tú</p>
-                <p id="regconjq3_tu_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
-                <p id="regconjq3_udelella_ans" class="col-sm-2"></p>
-            </div>
-
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Nosotros</p>
-                <p id="regconjq3_nos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Vosotros</p>
-                <p id="regconjq3_vos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
-                <p id="regconjq3_udsloslas_ans" class="col-sm-2"></p>
-            </div>
-
-            <script>
-                function regconjq3() {
-
-                    var rcq3_yo = document.getElementById("regconjq3_yo").value;
-                    var rcq3_tu = document.getElementById("regconjq3_tu").value;
-                    var rcq3_udelella = document.getElementById("regconjq3_udelella").value;
-                    var rcq3_nos = document.getElementById("regconjq3_nos").value;
-                    var rcq3_vos = document.getElementById("regconjq3_vos").value;
-                    var rcq3_udsloslas = document.getElementById("regconjq3_udsloslas").value;
-                    var rcq3_yo_ans, rcq3_tu_ans, rcq3_udelella_ans, rcq3_nos_ans, rcq3_vos_ans, rcq3_udsloslas_ans;
-
-                    if (rcq3_yo == "escribo" || rcq3_yo == "Escribo") {
-                        rcq3_yo_ans = "CORRECT";
-                    } else {
-                        rcq3_yo_ans = "INCORRECT";
-                    }
-
-                    if (rcq3_tu == "escribes" || rcq3_tu == "Escribes") {
-                        rcq3_tu_ans = "CORRECT";
-                    } else {
-                        rcq3_tu_ans = "INCORRECT";
-                    }
-
-                    if (rcq3_udelella == "escribe" || rcq3_udelella == "Escribe") {
-                        rcq3_udelella_ans = "CORRECT";
-                    } else {
-                        rcq3_udelella_ans = "INCORRECT";
-                    }
-
-                    if (rcq3_nos == "escribimos" || rcq3_nos == "Escribimos") {
-                        rcq3_nos_ans = "CORRECT";
-                    } else {
-                        rcq3_nos_ans = "INCORRECT";
-                    }
-
-                    if (rcq3_vos == "escribís" || rcq3_vos == "Escribís") {
-                        rcq3_vos_ans = "CORRECT";
-                    } else {
-                        rcq3_vos_ans = "INCORRECT";
-                    }
-
-                    if (rcq3_udsloslas == "escriben" || rcq3_udsloslas == "Escriben") {
-                        rcq3_udsloslas_ans = "CORRECT";
-                    } else {
-                        rcq3_udsloslas_ans = "INCORRECT";
-                    }
-
-                    document.getElementById("regconjq3_yo_ans").innerHTML = rcq3_yo_ans;
-                    document.getElementById("regconjq3_tu_ans").innerHTML = rcq3_tu_ans;
-                    document.getElementById("regconjq3_udelella_ans").innerHTML = rcq3_udelella_ans;
-                    document.getElementById("regconjq3_nos_ans").innerHTML = rcq3_nos_ans;
-                    document.getElementById("regconjq3_vos_ans").innerHTML = rcq3_vos_ans;
-                    document.getElementById("regconjq3_udsloslas_ans").innerHTML = rcq3_udsloslas_ans;
-                }
-            </script>
-        </div>
-        <!--ROW 1 END-->
-
-        <!--BEGIN ROW 2-->
-        <div class="col-sm-4 well">
-            <h3 style="text-align: center"><b>Comprar</b> (to buy)</h3>
-            <br>
-            <form role="form">
-
-                <div class="form-group row">
-                    <label for="regconjq4_yo" class="col-sm-3" style="text-align: right">Yo</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq4_yo" style="width: 20%">
-                    <label for="regconjq4_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq4_nos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="regconjq4_tu" class="col-sm-3" style="text-align: right">Tú</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq4_tu" style="width: 20%">
-                    <label for="regconjq4_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq4_vos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="regconjq4_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq4_udelella" style="width: 20%">
-                    <label for="regconjq4_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq4_udsloslas" style="width: 20%">
-                </div>
-
-                <br>
-                <button type="button" class="btn btn-primary btn-block" onclick="regconjq4()">Submit</button>
-
-            </form>
-                        
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Yo</p>
-                <p id="regconjq4_yo_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Tú</p>
-                <p id="regconjq4_tu_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
-                <p id="regconjq4_udelella_ans" class="col-sm-2"></p>
-            </div>
-
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Nosotros</p>
-                <p id="regconjq4_nos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Vosotros</p>
-                <p id="regconjq4_vos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
-                <p id="regconjq4_udsloslas_ans" class="col-sm-2"></p>
-            </div>
-
-            <script>
-                function regconjq4() {
-
-                    var rcq4_yo = document.getElementById("regconjq4_yo").value;
-                    var rcq4_tu = document.getElementById("regconjq4_tu").value;
-                    var rcq4_udelella = document.getElementById("regconjq4_udelella").value;
-                    var rcq4_nos = document.getElementById("regconjq4_nos").value;
-                    var rcq4_vos = document.getElementById("regconjq4_vos").value;
-                    var rcq4_udsloslas = document.getElementById("regconjq4_udsloslas").value;
-                    var rcq4_yo_ans, rcq4_tu_ans, rcq4_udelella_ans, rcq4_nos_ans, rcq4_vos_ans, rcq4_udsloslas_ans;
-
-                    if (rcq4_yo == "compro" || rcq4_yo == "Compro") {
-                        rcq4_yo_ans = "CORRECT";
-                    } else {
-                        rcq4_yo_ans = "INCORRECT";
-                    }
-
-                    if (rcq4_tu == "compras" || rcq4_tu == "Compras") {
-                        rcq4_tu_ans = "CORRECT";
-                    } else {
-                        rcq4_tu_ans = "INCORRECT";
-                    }
-
-                    if (rcq4_udelella == "compra" || rcq4_udelella == "Compra") {
-                        rcq4_udelella_ans = "CORRECT";
-                    } else {
-                        rcq4_udelella_ans = "INCORRECT";
-                    }
-
-                    if (rcq4_nos == "compramos" || rcq4_nos == "Compramos") {
-                        rcq4_nos_ans = "CORRECT";
-                    } else {
-                        rcq4_nos_ans = "INCORRECT";
-                    }
-
-                    if (rcq4_vos == "compráis" || rcq4_vos == "Compráis") {
-                        rcq4_vos_ans = "CORRECT";
-                    } else {
-                        rcq4_vos_ans = "INCORRECT";
-                    }
-
-                    if (rcq4_udsloslas == "compran" || rcq4_udsloslas == "Compran") {
-                        rcq4_udsloslas_ans = "CORRECT";
-                    } else {
-                        rcq4_udsloslas_ans = "INCORRECT";
-                    }
-
-                    document.getElementById("regconjq4_yo_ans").innerHTML = rcq4_yo_ans;
-                    document.getElementById("regconjq4_tu_ans").innerHTML = rcq4_tu_ans;
-                    document.getElementById("regconjq4_udelella_ans").innerHTML = rcq4_udelella_ans;
-                    document.getElementById("regconjq4_nos_ans").innerHTML = rcq4_nos_ans;
-                    document.getElementById("regconjq4_vos_ans").innerHTML = rcq4_vos_ans;
-                    document.getElementById("regconjq4_udsloslas_ans").innerHTML = rcq4_udsloslas_ans;
-                }
-            </script>
+                    <script>
+                        function regconjq2() {
         
-        </div>
-
-
-        <div class="col-sm-4 well">
-            <h3 style="text-align: center"><b>Beber</b> (to drink)</h3>
-            <br>
-            <form role="form">
-
-                <div class="form-group row">
-                    <label for="regconjq5_yo" class="col-sm-3" style="text-align: right">Yo</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq5_yo" style="width: 20%">
-                    <label for="regconjq5_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq5_nos" style="width: 20%">
+                            var rcq2_yo = document.getElementById("regconjq2_yo").value;
+                            var rcq2_tu = document.getElementById("regconjq2_tu").value;
+                            var rcq2_udelella = document.getElementById("regconjq2_udelella").value;
+                            var rcq2_nos = document.getElementById("regconjq2_nos").value;
+                            var rcq2_vos = document.getElementById("regconjq2_vos").value;
+                            var rcq2_udsloslas = document.getElementById("regconjq2_udsloslas").value;
+                            var rcq2_yo_ans, rcq2_tu_ans, rcq2_udelella_ans, rcq2_nos_ans, rcq2_vos_ans, rcq2_udsloslas_ans;
+        
+                            if (rcq2_yo == "como" || rcq2_yo == "Como") {
+                                rcq2_yo_ans = "CORRECT";
+                            } else {
+                                rcq2_yo_ans = "INCORRECT";
+                            }
+        
+                            if (rcq2_tu == "comes" || rcq2_tu == "Comes") {
+                                rcq2_tu_ans = "CORRECT";
+                            } else {
+                                rcq2_tu_ans = "INCORRECT";
+                            }
+        
+                            if (rcq2_udelella == "come" || rcq2_udelella == "Come") {
+                                rcq2_udelella_ans = "CORRECT";
+                            } else {
+                                rcq2_udelella_ans = "INCORRECT";
+                            }
+        
+                            if (rcq2_nos == "comemos" || rcq2_nos == "Comemos") {
+                                rcq2_nos_ans = "CORRECT";
+                            } else {
+                                rcq2_nos_ans = "INCORRECT";
+                            }
+        
+                            if (rcq2_vos == "coméis" || rcq2_vos == "Coméis") {
+                                rcq2_vos_ans = "CORRECT";
+                            } else {
+                                rcq2_vos_ans = "INCORRECT";
+                            }
+        
+                            if (rcq2_udsloslas == "comen" || rcq2_udsloslas == "Comen") {
+                                rcq2_udsloslas_ans = "CORRECT";
+                            } else {
+                                rcq2_udsloslas_ans = "INCORRECT";
+                            }
+        
+                            document.getElementById("regconjq2_yo_ans").innerHTML = rcq2_yo_ans;
+                            document.getElementById("regconjq2_tu_ans").innerHTML = rcq2_tu_ans;
+                            document.getElementById("regconjq2_udelella_ans").innerHTML = rcq2_udelella_ans;
+                            document.getElementById("regconjq2_nos_ans").innerHTML = rcq2_nos_ans;
+                            document.getElementById("regconjq2_vos_ans").innerHTML = rcq2_vos_ans;
+                            document.getElementById("regconjq2_udsloslas_ans").innerHTML = rcq2_udsloslas_ans;
+                        }
+                    </script>
                 </div>
-
-                <div class="form-group row">
-                    <label for="regconjq5_tu" class="col-sm-3" style="text-align: right">Tú</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq5_tu" style="width: 20%">
-                    <label for="regconjq5_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq5_vos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="regconjq5_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq5_udelella" style="width: 20%">
-                    <label for="regconjq5_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq5_udsloslas" style="width: 20%">
-                </div>
-
-                <br>
-                <button type="button" class="btn btn-primary btn-block" onclick="regconjq5()">Submit</button>
-
-            </form>
-                        
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Yo</p>
-                <p id="regconjq5_yo_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Tú</p>
-                <p id="regconjq5_tu_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
-                <p id="regconjq5_udelella_ans" class="col-sm-2"></p>
-            </div>
-
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Nosotros</p>
-                <p id="regconjq5_nos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Vosotros</p>
-                <p id="regconjq5_vos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
-                <p id="regconjq5_udsloslas_ans" class="col-sm-2"></p>
             </div>
         
-            <script>
-                function regconjq5() {
-
-                    var rcq5_yo = document.getElementById("regconjq5_yo").value;
-                    var rcq5_tu = document.getElementById("regconjq5_tu").value;
-                    var rcq5_udelella = document.getElementById("regconjq5_udelella").value;
-                    var rcq5_nos = document.getElementById("regconjq5_nos").value;
-                    var rcq5_vos = document.getElementById("regconjq5_vos").value;
-                    var rcq5_udsloslas = document.getElementById("regconjq5_udsloslas").value;
-                    var rcq5_yo_ans, rcq5_tu_ans, rcq5_udelella_ans, rcq5_nos_ans, rcq5_vos_ans, rcq5_udsloslas_ans;
-
-                    if (rcq5_yo == "bebo" || rcq5_yo == "Bebo") {
-                        rcq5_yo_ans = "CORRECT";
-                    } else {
-                        rcq5_yo_ans = "INCORRECT";
-                    }
-
-                    if (rcq5_tu == "Bebes" || rcq5_tu == "bebes") {
-                        rcq5_tu_ans = "CORRECT";
-                    } else {
-                        rcq5_tu_ans = "INCORRECT";
-                    }
-
-                    if (rcq5_udelella == "bebe" || rcq5_udelella == "Bebe") {
-                        rcq5_udelella_ans = "CORRECT";
-                    } else {
-                        rcq5_udelella_ans = "INCORRECT";
-                    }
-
-                    if (rcq5_nos == "bebemos" || rcq5_nos == "Bebemos") {
-                        rcq5_nos_ans = "CORRECT";
-                    } else {
-                        rcq5_nos_ans = "INCORRECT";
-                    }
-
-                    if (rcq5_vos == "bebéis" || rcq5_vos == "Bebéis") {
-                        rcq5_vos_ans = "CORRECT";
-                    } else {
-                        rcq5_vos_ans = "INCORRECT";
-                    }
-
-                    if (rcq5_udsloslas == "beben" || rcq5_udsloslas == "Beben") {
-                        rcq5_udsloslas_ans = "CORRECT";
-                    } else {
-                        rcq5_udsloslas_ans = "INCORRECT";
-                    }
-
-                    document.getElementById("regconjq5_yo_ans").innerHTML = rcq5_yo_ans;
-                    document.getElementById("regconjq5_tu_ans").innerHTML = rcq5_tu_ans;
-                    document.getElementById("regconjq5_udelella_ans").innerHTML = rcq5_udelella_ans;
-                    document.getElementById("regconjq5_nos_ans").innerHTML = rcq5_nos_ans;
-                    document.getElementById("regconjq5_vos_ans").innerHTML = rcq5_vos_ans;
-                    document.getElementById("regconjq5_udsloslas_ans").innerHTML = rcq5_udsloslas_ans;
-                }
-            </script>    
-
-        </div>
-
-
-        <div class="col-sm-4 well">
-            <h3 style="text-align: center"><b>Decidir</b> (to decide)</h3>
-            <br>
-            <form role="form">
-
-                <div class="form-group row">
-                    <label for="regconjq6_yo" class="col-sm-3" style="text-align: right">Yo</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq6_yo" style="width: 20%">
-                    <label for="regconjq6_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq6_nos" style="width: 20%">
+            <div class="row">
+                <div class="col-sm-6 well" style="background: lightsteelblue">
+                    <br>
+                    <h3 style="text-align: center"><b>Escribir</b> (to write)</h3>
+                    <br>
+                    <form role="form">
+        
+                        <div class="form-group row">
+                            <label for="regconjq3_yo" class="col-sm-3" style="text-align: right">Yo</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq3_yo" style="width: 20%">
+                            <label for="regconjq3_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq3_nos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="regconjq3_tu" class="col-sm-3" style="text-align: right">Tú</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq3_tu" style="width: 20%">
+                            <label for="regconjq3_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq3_vos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="regconjq3_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq3_udelella" style="width: 20%">
+                            <label for="regconjq3_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq3_udsloslas" style="width: 20%">
+                        </div>
+        
+                        <br>
+                        <button type="button" class="btn btn-primary btn-block" onclick="regconjq3()">Submit</button>
+                   
+                    </form>   
+                                
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Yo</p>
+                        <p id="regconjq3_yo_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Tú</p>
+                        <p id="regconjq3_tu_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
+                        <p id="regconjq3_udelella_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Nosotros</p>
+                        <p id="regconjq3_nos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Vosotros</p>
+                        <p id="regconjq3_vos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
+                        <p id="regconjq3_udsloslas_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <script>
+                        function regconjq3() {
+        
+                            var rcq3_yo = document.getElementById("regconjq3_yo").value;
+                            var rcq3_tu = document.getElementById("regconjq3_tu").value;
+                            var rcq3_udelella = document.getElementById("regconjq3_udelella").value;
+                            var rcq3_nos = document.getElementById("regconjq3_nos").value;
+                            var rcq3_vos = document.getElementById("regconjq3_vos").value;
+                            var rcq3_udsloslas = document.getElementById("regconjq3_udsloslas").value;
+                            var rcq3_yo_ans, rcq3_tu_ans, rcq3_udelella_ans, rcq3_nos_ans, rcq3_vos_ans, rcq3_udsloslas_ans;
+        
+                            if (rcq3_yo == "escribo" || rcq3_yo == "Escribo") {
+                                rcq3_yo_ans = "CORRECT";
+                            } else {
+                                rcq3_yo_ans = "INCORRECT";
+                            }
+        
+                            if (rcq3_tu == "escribes" || rcq3_tu == "Escribes") {
+                                rcq3_tu_ans = "CORRECT";
+                            } else {
+                                rcq3_tu_ans = "INCORRECT";
+                            }
+        
+                            if (rcq3_udelella == "escribe" || rcq3_udelella == "Escribe") {
+                                rcq3_udelella_ans = "CORRECT";
+                            } else {
+                                rcq3_udelella_ans = "INCORRECT";
+                            }
+        
+                            if (rcq3_nos == "escribimos" || rcq3_nos == "Escribimos") {
+                                rcq3_nos_ans = "CORRECT";
+                            } else {
+                                rcq3_nos_ans = "INCORRECT";
+                            }
+        
+                            if (rcq3_vos == "escribís" || rcq3_vos == "Escribís") {
+                                rcq3_vos_ans = "CORRECT";
+                            } else {
+                                rcq3_vos_ans = "INCORRECT";
+                            }
+        
+                            if (rcq3_udsloslas == "escriben" || rcq3_udsloslas == "Escriben") {
+                                rcq3_udsloslas_ans = "CORRECT";
+                            } else {
+                                rcq3_udsloslas_ans = "INCORRECT";
+                            }
+        
+                            document.getElementById("regconjq3_yo_ans").innerHTML = rcq3_yo_ans;
+                            document.getElementById("regconjq3_tu_ans").innerHTML = rcq3_tu_ans;
+                            document.getElementById("regconjq3_udelella_ans").innerHTML = rcq3_udelella_ans;
+                            document.getElementById("regconjq3_nos_ans").innerHTML = rcq3_nos_ans;
+                            document.getElementById("regconjq3_vos_ans").innerHTML = rcq3_vos_ans;
+                            document.getElementById("regconjq3_udsloslas_ans").innerHTML = rcq3_udsloslas_ans;
+                        }
+                    </script>
                 </div>
-
-                <div class="form-group row">
-                    <label for="regconjq6_tu" class="col-sm-3" style="text-align: right">Tú</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq6_tu" style="width: 20%">
-                    <label for="regconjq6_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq6_vos" style="width: 20%">
+                <!--ROW 1 END-->
+        
+                <!--BEGIN ROW 2-->
+                <div class="col-sm-6 well" style="background: lightsteelblue">
+                    <br>
+                    <h3 style="text-align: center"><b>Comprar</b> (to buy)</h3>
+                    <br>
+                    <form role="form">
+        
+                        <div class="form-group row">
+                            <label for="regconjq4_yo" class="col-sm-3" style="text-align: right">Yo</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq4_yo" style="width: 20%">
+                            <label for="regconjq4_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq4_nos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="regconjq4_tu" class="col-sm-3" style="text-align: right">Tú</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq4_tu" style="width: 20%">
+                            <label for="regconjq4_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq4_vos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="regconjq4_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq4_udelella" style="width: 20%">
+                            <label for="regconjq4_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq4_udsloslas" style="width: 20%">
+                        </div>
+        
+                        <br>
+                        <button type="button" class="btn btn-primary btn-block" onclick="regconjq4()">Submit</button>
+        
+                    </form>
+                                
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Yo</p>
+                        <p id="regconjq4_yo_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Tú</p>
+                        <p id="regconjq4_tu_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
+                        <p id="regconjq4_udelella_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Nosotros</p>
+                        <p id="regconjq4_nos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Vosotros</p>
+                        <p id="regconjq4_vos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
+                        <p id="regconjq4_udsloslas_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <script>
+                        function regconjq4() {
+        
+                            var rcq4_yo = document.getElementById("regconjq4_yo").value;
+                            var rcq4_tu = document.getElementById("regconjq4_tu").value;
+                            var rcq4_udelella = document.getElementById("regconjq4_udelella").value;
+                            var rcq4_nos = document.getElementById("regconjq4_nos").value;
+                            var rcq4_vos = document.getElementById("regconjq4_vos").value;
+                            var rcq4_udsloslas = document.getElementById("regconjq4_udsloslas").value;
+                            var rcq4_yo_ans, rcq4_tu_ans, rcq4_udelella_ans, rcq4_nos_ans, rcq4_vos_ans, rcq4_udsloslas_ans;
+        
+                            if (rcq4_yo == "compro" || rcq4_yo == "Compro") {
+                                rcq4_yo_ans = "CORRECT";
+                            } else {
+                                rcq4_yo_ans = "INCORRECT";
+                            }
+        
+                            if (rcq4_tu == "compras" || rcq4_tu == "Compras") {
+                                rcq4_tu_ans = "CORRECT";
+                            } else {
+                                rcq4_tu_ans = "INCORRECT";
+                            }
+        
+                            if (rcq4_udelella == "compra" || rcq4_udelella == "Compra") {
+                                rcq4_udelella_ans = "CORRECT";
+                            } else {
+                                rcq4_udelella_ans = "INCORRECT";
+                            }
+        
+                            if (rcq4_nos == "compramos" || rcq4_nos == "Compramos") {
+                                rcq4_nos_ans = "CORRECT";
+                            } else {
+                                rcq4_nos_ans = "INCORRECT";
+                            }
+        
+                            if (rcq4_vos == "compráis" || rcq4_vos == "Compráis") {
+                                rcq4_vos_ans = "CORRECT";
+                            } else {
+                                rcq4_vos_ans = "INCORRECT";
+                            }
+        
+                            if (rcq4_udsloslas == "compran" || rcq4_udsloslas == "Compran") {
+                                rcq4_udsloslas_ans = "CORRECT";
+                            } else {
+                                rcq4_udsloslas_ans = "INCORRECT";
+                            }
+        
+                            document.getElementById("regconjq4_yo_ans").innerHTML = rcq4_yo_ans;
+                            document.getElementById("regconjq4_tu_ans").innerHTML = rcq4_tu_ans;
+                            document.getElementById("regconjq4_udelella_ans").innerHTML = rcq4_udelella_ans;
+                            document.getElementById("regconjq4_nos_ans").innerHTML = rcq4_nos_ans;
+                            document.getElementById("regconjq4_vos_ans").innerHTML = rcq4_vos_ans;
+                            document.getElementById("regconjq4_udsloslas_ans").innerHTML = rcq4_udsloslas_ans;
+                        }
+                    </script>
+                
                 </div>
+            </div>
 
-                <div class="form-group row">
-                    <label for="regconjq6_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq6_udelella" style="width: 20%">
-                    <label for="regconjq6_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
-                    <input type="text" class="form-control col-sm-3" id="regconjq6_udsloslas" style="width: 20%">
+            <div class="row">
+                <div class="col-sm-6 well" style="background: lightgrey">
+                    <br>
+                    <h3 style="text-align: center"><b>Beber</b> (to drink)</h3>
+                    <br>
+                    <form role="form">
+        
+                        <div class="form-group row">
+                            <label for="regconjq5_yo" class="col-sm-3" style="text-align: right">Yo</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq5_yo" style="width: 20%">
+                            <label for="regconjq5_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq5_nos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="regconjq5_tu" class="col-sm-3" style="text-align: right">Tú</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq5_tu" style="width: 20%">
+                            <label for="regconjq5_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq5_vos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="regconjq5_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq5_udelella" style="width: 20%">
+                            <label for="regconjq5_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq5_udsloslas" style="width: 20%">
+                        </div>
+        
+                        <br>
+                        <button type="button" class="btn btn-primary btn-block" onclick="regconjq5()">Submit</button>
+        
+                    </form>
+                                
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Yo</p>
+                        <p id="regconjq5_yo_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Tú</p>
+                        <p id="regconjq5_tu_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
+                        <p id="regconjq5_udelella_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Nosotros</p>
+                        <p id="regconjq5_nos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Vosotros</p>
+                        <p id="regconjq5_vos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
+                        <p id="regconjq5_udsloslas_ans" class="col-sm-2"></p>
+                    </div>
+                
+                    <script>
+                        function regconjq5() {
+        
+                            var rcq5_yo = document.getElementById("regconjq5_yo").value;
+                            var rcq5_tu = document.getElementById("regconjq5_tu").value;
+                            var rcq5_udelella = document.getElementById("regconjq5_udelella").value;
+                            var rcq5_nos = document.getElementById("regconjq5_nos").value;
+                            var rcq5_vos = document.getElementById("regconjq5_vos").value;
+                            var rcq5_udsloslas = document.getElementById("regconjq5_udsloslas").value;
+                            var rcq5_yo_ans, rcq5_tu_ans, rcq5_udelella_ans, rcq5_nos_ans, rcq5_vos_ans, rcq5_udsloslas_ans;
+        
+                            if (rcq5_yo == "bebo" || rcq5_yo == "Bebo") {
+                                rcq5_yo_ans = "CORRECT";
+                            } else {
+                                rcq5_yo_ans = "INCORRECT";
+                            }
+        
+                            if (rcq5_tu == "Bebes" || rcq5_tu == "bebes") {
+                                rcq5_tu_ans = "CORRECT";
+                            } else {
+                                rcq5_tu_ans = "INCORRECT";
+                            }
+        
+                            if (rcq5_udelella == "bebe" || rcq5_udelella == "Bebe") {
+                                rcq5_udelella_ans = "CORRECT";
+                            } else {
+                                rcq5_udelella_ans = "INCORRECT";
+                            }
+        
+                            if (rcq5_nos == "bebemos" || rcq5_nos == "Bebemos") {
+                                rcq5_nos_ans = "CORRECT";
+                            } else {
+                                rcq5_nos_ans = "INCORRECT";
+                            }
+        
+                            if (rcq5_vos == "bebéis" || rcq5_vos == "Bebéis") {
+                                rcq5_vos_ans = "CORRECT";
+                            } else {
+                                rcq5_vos_ans = "INCORRECT";
+                            }
+        
+                            if (rcq5_udsloslas == "beben" || rcq5_udsloslas == "Beben") {
+                                rcq5_udsloslas_ans = "CORRECT";
+                            } else {
+                                rcq5_udsloslas_ans = "INCORRECT";
+                            }
+        
+                            document.getElementById("regconjq5_yo_ans").innerHTML = rcq5_yo_ans;
+                            document.getElementById("regconjq5_tu_ans").innerHTML = rcq5_tu_ans;
+                            document.getElementById("regconjq5_udelella_ans").innerHTML = rcq5_udelella_ans;
+                            document.getElementById("regconjq5_nos_ans").innerHTML = rcq5_nos_ans;
+                            document.getElementById("regconjq5_vos_ans").innerHTML = rcq5_vos_ans;
+                            document.getElementById("regconjq5_udsloslas_ans").innerHTML = rcq5_udsloslas_ans;
+                        }
+                    </script>    
+        
                 </div>
-
-                <br>
-                <button type="button" class="btn btn-primary btn-block" onclick="regconjq6()">Submit</button>
+        
+        
+                <div class="col-sm-6 well" style="background: lightgray">
+                        <br>
+                    <h3 style="text-align: center"><b>Decidir</b> (to decide)</h3>
+                    <br>
+                    <form role="form">
+        
+                        <div class="form-group row">
+                            <label for="regconjq6_yo" class="col-sm-3" style="text-align: right">Yo</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq6_yo" style="width: 20%">
+                            <label for="regconjq6_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq6_nos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="regconjq6_tu" class="col-sm-3" style="text-align: right">Tú</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq6_tu" style="width: 20%">
+                            <label for="regconjq6_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq6_vos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="regconjq6_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq6_udelella" style="width: 20%">
+                            <label for="regconjq6_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
+                            <input type="text" class="form-control col-sm-2" id="regconjq6_udsloslas" style="width: 20%">
+                        </div>
+        
+                        <br>
+                        <button type="button" class="btn btn-primary btn-block" onclick="regconjq6()">Submit</button>
+                    
+                    </form>   
+                                
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Yo</p>
+                        <p id="regconjq6_yo_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Tú</p>
+                        <p id="regconjq6_tu_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
+                        <p id="regconjq6_udelella_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Nosotros</p>
+                        <p id="regconjq6_nos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Vosotros</p>
+                        <p id="regconjq6_vos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
+                        <p id="regconjq6_udsloslas_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <script>
+                        function regconjq6() {
+        
+                            var rcq6_yo = document.getElementById("regconjq6_yo").value;
+                            var rcq6_tu = document.getElementById("regconjq6_tu").value;
+                            var rcq6_udelella = document.getElementById("regconjq6_udelella").value;
+                            var rcq6_nos = document.getElementById("regconjq6_nos").value;
+                            var rcq6_vos = document.getElementById("regconjq6_vos").value;
+                            var rcq6_udsloslas = document.getElementById("regconjq6_udsloslas").value;
+                            var rcq6_yo_ans, rcq6_tu_ans, rcq6_udelella_ans, rcq6_nos_ans, rcq6_vos_ans, rcq6_udsloslas_ans;
+        
+                            if (rcq6_yo == "decido" || rcq6_yo == "Decido") {
+                                rcq6_yo_ans = "CORRECT";
+                            } else {
+                                rcq6_yo_ans = "INCORRECT";
+                            }
+        
+                            if (rcq6_tu == "decides" || rcq6_tu == "Decides") {
+                                rcq6_tu_ans = "CORRECT";
+                            } else {
+                                rcq6_tu_ans = "INCORRECT";
+                            }
+        
+                            if (rcq6_udelella == "decide" || rcq6_udelella == "Decide") {
+                                rcq6_udelella_ans = "CORRECT";
+                            } else {
+                                rcq6_udelella_ans = "INCORRECT";
+                            }
+        
+                            if (rcq6_nos == "decidimos" || rcq6_nos == "Decidimos") {
+                                rcq6_nos_ans = "CORRECT";
+                            } else {
+                                rcq6_nos_ans = "INCORRECT";
+                            }
+        
+                            if (rcq6_vos == "decidís" || rcq6_vos == "Decidís") {
+                                rcq6_vos_ans = "CORRECT";
+                            } else {
+                                rcq6_vos_ans = "INCORRECT";
+                            }
+        
+                            if (rcq6_udsloslas == "deciden" || rcq6_udsloslas == "Deciden") {
+                                rcq6_udsloslas_ans = "CORRECT";
+                            } else {
+                                rcq6_udsloslas_ans = "INCORRECT";
+                            }
+        
+                            document.getElementById("regconjq6_yo_ans").innerHTML = rcq6_yo_ans;
+                            document.getElementById("regconjq6_tu_ans").innerHTML = rcq6_tu_ans;
+                            document.getElementById("regconjq6_udelella_ans").innerHTML = rcq6_udelella_ans;
+                            document.getElementById("regconjq6_nos_ans").innerHTML = rcq6_nos_ans;
+                            document.getElementById("regconjq6_vos_ans").innerHTML = rcq6_vos_ans;
+                            document.getElementById("regconjq6_udsloslas_ans").innerHTML = rcq6_udsloslas_ans;
+                        }
+                    </script>
             
-            </form>   
-                        
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Yo</p>
-                <p id="regconjq6_yo_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Tú</p>
-                <p id="regconjq6_tu_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
-                <p id="regconjq6_udelella_ans" class="col-sm-2"></p>
+                
+                </div>
             </div>
-
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Nosotros</p>
-                <p id="regconjq6_nos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Vosotros</p>
-                <p id="regconjq6_vos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
-                <p id="regconjq6_udsloslas_ans" class="col-sm-2"></p>
-            </div>
-
-            <script>
-                function regconjq6() {
-
-                    var rcq6_yo = document.getElementById("regconjq6_yo").value;
-                    var rcq6_tu = document.getElementById("regconjq6_tu").value;
-                    var rcq6_udelella = document.getElementById("regconjq6_udelella").value;
-                    var rcq6_nos = document.getElementById("regconjq6_nos").value;
-                    var rcq6_vos = document.getElementById("regconjq6_vos").value;
-                    var rcq6_udsloslas = document.getElementById("regconjq6_udsloslas").value;
-                    var rcq6_yo_ans, rcq6_tu_ans, rcq6_udelella_ans, rcq6_nos_ans, rcq6_vos_ans, rcq6_udsloslas_ans;
-
-                    if (rcq6_yo == "decido" || rcq6_yo == "Decido") {
-                        rcq6_yo_ans = "CORRECT";
-                    } else {
-                        rcq6_yo_ans = "INCORRECT";
-                    }
-
-                    if (rcq6_tu == "decides" || rcq6_tu == "Decides") {
-                        rcq6_tu_ans = "CORRECT";
-                    } else {
-                        rcq6_tu_ans = "INCORRECT";
-                    }
-
-                    if (rcq6_udelella == "decide" || rcq6_udelella == "Decide") {
-                        rcq6_udelella_ans = "CORRECT";
-                    } else {
-                        rcq6_udelella_ans = "INCORRECT";
-                    }
-
-                    if (rcq6_nos == "decidimos" || rcq6_nos == "Decidimos") {
-                        rcq6_nos_ans = "CORRECT";
-                    } else {
-                        rcq6_nos_ans = "INCORRECT";
-                    }
-
-                    if (rcq6_vos == "decidís" || rcq6_vos == "Decidís") {
-                        rcq6_vos_ans = "CORRECT";
-                    } else {
-                        rcq6_vos_ans = "INCORRECT";
-                    }
-
-                    if (rcq6_udsloslas == "deciden" || rcq6_udsloslas == "Deciden") {
-                        rcq6_udsloslas_ans = "CORRECT";
-                    } else {
-                        rcq6_udsloslas_ans = "INCORRECT";
-                    }
-
-                    document.getElementById("regconjq6_yo_ans").innerHTML = rcq6_yo_ans;
-                    document.getElementById("regconjq6_tu_ans").innerHTML = rcq6_tu_ans;
-                    document.getElementById("regconjq6_udelella_ans").innerHTML = rcq6_udelella_ans;
-                    document.getElementById("regconjq6_nos_ans").innerHTML = rcq6_nos_ans;
-                    document.getElementById("regconjq6_vos_ans").innerHTML = rcq6_vos_ans;
-                    document.getElementById("regconjq6_udsloslas_ans").innerHTML = rcq6_udsloslas_ans;
-                }
-            </script>
-    
+                <!--ROW 2 END-->
         
-        </div>
-        <!--ROW 2 END-->
-
-        <br>
-        <br>
-        <h2 style="padding-left: 10px">Practicing common <u>irregular</u> present tense conjugations</h2>
-        <p style="padding-left: 10px">Complete the following tables with the appropriate conjugations. <b>Make sure to add accents</b> where applicable</p>
-
-
-        <!--BEGIN ROW 3-->
-        <div class="col-sm-4 well">
-            <h3 style="text-align: center"><b>Ir</b> (to go)</h3>
-            <br>
-            <form role="form">
-
-                <div class="form-group row">
-                    <label for="irrconjq1_yo" class="col-sm-3" style="text-align: right">Yo</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq1_yo" style="width: 20%">
-                    <label for="irrconjq1_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq1_nos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="irrconjq1_tu" class="col-sm-3" style="text-align: right">Tú</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq1_tu" style="width: 20%">
-                    <label for="irrconjq1_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq1_vos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="irrconjq1_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq1_udelella" style="width: 20%">
-                    <label for="irrconjq1_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq1_udsloslas" style="width: 20%">
-                </div>
-
                 <br>
-                <button type="button" class="btn btn-primary btn-block" onclick="irrconjq1()">Submit</button>
-
-            </form>
-                        
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Yo</p>
-                <p id="irrconjq1_yo_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Tú</p>
-                <p id="irrconjq1_tu_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
-                <p id="irrconjq1_udelella_ans" class="col-sm-2"></p>
-            </div>
-
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Nosotros</p>
-                <p id="irrconjq1_nos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Vosotros</p>
-                <p id="irrconjq1_vos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
-                <p id="irrconjq1_udsloslas_ans" class="col-sm-2"></p>
-            </div>
-
-            <script>
-                function irrconjq1() {
-
-                    var icq1_yo = document.getElementById("irrconjq1_yo").value;
-                    var icq1_tu = document.getElementById("irrconjq1_tu").value;
-                    var icq1_udelella = document.getElementById("irrconjq1_udelella").value;
-                    var icq1_nos = document.getElementById("irrconjq1_nos").value;
-                    var icq1_vos = document.getElementById("irrconjq1_vos").value;
-                    var icq1_udsloslas = document.getElementById("irrconjq1_udsloslas").value;
-                    var icq1_yo_ans, icq1_tu_ans, icq1_udelella_ans, icq1_nos_ans, icq1_vos_ans, icq1_udsloslas_ans;
-
-                    if (icq1_yo == "voy" || icq1_yo == "Voy") {
-                        icq1_yo_ans = "CORRECT";
-                    } else {
-                        icq1_yo_ans = "INCORRECT";
-                    }
-
-                    if (icq1_tu == "vas" || icq1_tu == "Vas") {
-                        icq1_tu_ans = "CORRECT";
-                    } else {
-                        icq1_tu_ans = "INCORRECT";
-                    }
-
-                    if (icq1_udelella == "va" || icq1_udelella == "Va") {
-                        icq1_udelella_ans = "CORRECT";
-                    } else {
-                        icq1_udelella_ans = "INCORRECT";
-                    }
-
-                    if (icq1_nos == "vamos" || icq1_nos == "Vamos") {
-                        icq1_nos_ans = "CORRECT";
-                    } else {
-                        icq1_nos_ans = "INCORRECT";
-                    }
-
-                    if (icq1_vos == "vais" || icq1_vos == "Vais") {
-                        icq1_vos_ans = "CORRECT";
-                    } else {
-                        icq1_vos_ans = "INCORRECT";
-                    }
-
-                    if (icq1_udsloslas == "van" || icq1_udsloslas == "Van") {
-                        icq1_udsloslas_ans = "CORRECT";
-                    } else {
-                        icq1_udsloslas_ans = "INCORRECT";
-                    }
-
-                    document.getElementById("irrconjq1_yo_ans").innerHTML = icq1_yo_ans;
-                    document.getElementById("irrconjq1_tu_ans").innerHTML = icq1_tu_ans;
-                    document.getElementById("irrconjq1_udelella_ans").innerHTML = icq1_udelella_ans;
-                    document.getElementById("irrconjq1_nos_ans").innerHTML = icq1_nos_ans;
-                    document.getElementById("irrconjq1_vos_ans").innerHTML = icq1_vos_ans;
-                    document.getElementById("irrconjq1_udsloslas_ans").innerHTML = icq1_udsloslas_ans;
-                }
-            </script>
+                <br>
+                <h2 style="padding-left: 10px">Practicing common <u>irregular</u> present tense conjugations</h2>
+                <p style="padding-left: 10px">Complete the following tables with the appropriate conjugations. <b>Make sure to add accents</b> where applicable</p>
         
-        </div>
-
-        <div class="col-sm-4 well">
-            <h3 style="text-align: center"><b>Tener</b> (to have)</h3>
-            <br>
-            <form role="form">
-
-                <div class="form-group row">
-                    <label for="irrconjq2_yo" class="col-sm-3" style="text-align: right">Yo</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq2_yo" style="width: 20%">
-                    <label for="irrconjq2_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq2_nos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="irrconjq2_tu" class="col-sm-3" style="text-align: right">Tú</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq2_tu" style="width: 20%">
-                    <label for="irrconjq2_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq2_vos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="irrconjq2_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq2_udelella" style="width: 20%">
-                    <label for="irrconjq2_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq2_udsloslas" style="width: 20%">
-                </div>
-
-                <br>
-                <button type="button" class="btn btn-primary btn-block" onclick="irrconjq2()">Submit</button>
-
-            </form>
-                        
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Yo</p>
-                <p id="irrconjq2_yo_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Tú</p>
-                <p id="irrconjq2_tu_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
-                <p id="irrconjq2_udelella_ans" class="col-sm-2"></p>
-            </div>
-
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Nosotros</p>
-                <p id="irrconjq2_nos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Vosotros</p>
-                <p id="irrconjq2_vos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
-                <p id="irrconjq2_udsloslas_ans" class="col-sm-2"></p>
-            </div>
         
-            <script>
-                function irrconjq2() {
-
-                    var icq2_yo = document.getElementById("irrconjq2_yo").value;
-                    var icq2_tu = document.getElementById("irrconjq2_tu").value;
-                    var icq2_udelella = document.getElementById("irrconjq2_udelella").value;
-                    var icq2_nos = document.getElementById("irrconjq2_nos").value;
-                    var icq2_vos = document.getElementById("irrconjq2_vos").value;
-                    var icq2_udsloslas = document.getElementById("irrconjq2_udsloslas").value;
-                    var icq2_yo_ans, icq2_tu_ans, icq2_udelella_ans, icq2_nos_ans, icq2_vos_ans, icq2_udsloslas_ans;
-
-                    if (icq2_yo == "tengo" || icq2_yo == "Tengo") {
-                        icq2_yo_ans = "CORRECT";
-                    } else {
-                        icq2_yo_ans = "INCORRECT";
-                    }
-
-                    if (icq2_tu == "tienes" || icq2_tu == "Tienes") {
-                        icq2_tu_ans = "CORRECT";
-                    } else {
-                        icq2_tu_ans = "INCORRECT";
-                    }
-
-                    if (icq2_udelella == "tiene" || icq2_udelella == "Tiene") {
-                        icq2_udelella_ans = "CORRECT";
-                    } else {
-                        icq2_udelella_ans = "INCORRECT";
-                    }
-
-                    if (icq2_nos == "tenemos" || icq2_nos == "Tenemos") {
-                        icq2_nos_ans = "CORRECT";
-                    } else {
-                        icq2_nos_ans = "INCORRECT";
-                    }
-
-                    if (icq2_vos == "tenéis" || icq2_vos == "Tenéis") {
-                        icq2_vos_ans = "CORRECT";
-                    } else {
-                        icq2_vos_ans = "INCORRECT";
-                    }
-
-                    if (icq2_udsloslas == "tienen" || icq2_udsloslas == "Tienen") {
-                        icq2_udsloslas_ans = "CORRECT";
-                    } else {
-                        icq2_udsloslas_ans = "INCORRECT";
-                    }
-
-                    document.getElementById("irrconjq2_yo_ans").innerHTML = icq2_yo_ans;
-                    document.getElementById("irrconjq2_tu_ans").innerHTML = icq2_tu_ans;
-                    document.getElementById("irrconjq2_udelella_ans").innerHTML = icq2_udelella_ans;
-                    document.getElementById("irrconjq2_nos_ans").innerHTML = icq2_nos_ans;
-                    document.getElementById("irrconjq2_vos_ans").innerHTML = icq2_vos_ans;
-                    document.getElementById("irrconjq2_udsloslas_ans").innerHTML = icq2_udsloslas_ans;
-                }
-            </script>    
-
-        </div>
-
-        <div class="col-sm-4 well">
-            <h3 style="text-align: center"><b>Querer</b> (to want, to love)</h3>
-            <br>
-            <form role="form">
-
-                <div class="form-group row">
-                    <label for="irrconjq3_yo" class="col-sm-3" style="text-align: right">Yo</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq3_yo" style="width: 20%">
-                    <label for="irrconjq3_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq3_nos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="irrconjq3_tu" class="col-sm-3" style="text-align: right">Tú</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq3_tu" style="width: 20%">
-                    <label for="irrconjq3_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq3_vos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="irrconjq3_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq3_udelella" style="width: 20%">
-                    <label for="irrconjq3_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq3_udsloslas" style="width: 20%">
-                </div>
-
-                <br>
-                <button type="button" class="btn btn-primary btn-block" onclick="irrconjq3()">Submit</button>
-            
-            </form>   
-                        
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Yo</p>
-                <p id="irrconjq3_yo_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Tú</p>
-                <p id="irrconjq3_tu_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
-                <p id="irrconjq3_udelella_ans" class="col-sm-2"></p>
-            </div>
-
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Nosotros</p>
-                <p id="irrconjq3_nos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Vosotros</p>
-                <p id="irrconjq3_vos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
-                <p id="irrconjq3_udsloslas_ans" class="col-sm-2"></p>
-            </div>
-
-            <script>
-                function irrconjq3() {
-
-                    var icq3_yo = document.getElementById("irrconjq3_yo").value;
-                    var icq3_tu = document.getElementById("irrconjq3_tu").value;
-                    var icq3_udelella = document.getElementById("irrconjq3_udelella").value;
-                    var icq3_nos = document.getElementById("irrconjq3_nos").value;
-                    var icq3_vos = document.getElementById("irrconjq3_vos").value;
-                    var icq3_udsloslas = document.getElementById("irrconjq3_udsloslas").value;
-                    var icq3_yo_ans, icq3_tu_ans, icq3_udelella_ans, icq3_nos_ans, icq3_vos_ans, icq3_udsloslas_ans;
-
-                    if (icq3_yo == "quiero" || icq3_yo == "Quiero") {
-                        icq3_yo_ans = "CORRECT";
-                    } else {
-                        icq3_yo_ans = "INCORRECT";
-                    }
-
-                    if (icq3_tu == "quieres" || icq3_tu == "Quieres") {
-                        icq3_tu_ans = "CORRECT";
-                    } else {
-                        icq3_tu_ans = "INCORRECT";
-                    }
-
-                    if (icq3_udelella == "quiere" || icq3_udelella == "Quiere") {
-                        icq3_udelella_ans = "CORRECT";
-                    } else {
-                        icq3_udelella_ans = "INCORRECT";
-                    }
-
-                    if (icq3_nos == "queremos" || icq3_nos == "Queremos") {
-                        icq3_nos_ans = "CORRECT";
-                    } else {
-                        icq3_nos_ans = "INCORRECT";
-                    }
-
-                    if (icq3_vos == "queréis" || icq3_vos == "Queréis") {
-                        icq3_vos_ans = "CORRECT";
-                    } else {
-                        icq3_vos_ans = "INCORRECT";
-                    }
-
-                    if (icq3_udsloslas == "quieren" || icq3_udsloslas == "Quieren") {
-                        icq3_udsloslas_ans = "CORRECT";
-                    } else {
-                        icq3_udsloslas_ans = "INCORRECT";
-                    }
-
-                    document.getElementById("irrconjq3_yo_ans").innerHTML = icq3_yo_ans;
-                    document.getElementById("irrconjq3_tu_ans").innerHTML = icq3_tu_ans;
-                    document.getElementById("irrconjq3_udelella_ans").innerHTML = icq3_udelella_ans;
-                    document.getElementById("irrconjq3_nos_ans").innerHTML = icq3_nos_ans;
-                    document.getElementById("irrconjq3_vos_ans").innerHTML = icq3_vos_ans;
-                    document.getElementById("irrconjq3_udsloslas_ans").innerHTML = icq3_udsloslas_ans;
-                }
-            </script>
-        </div>    
-        <!--ROW 3 END-->
-
-
-        <!--BEGIN ROW 4-->
-        <div class="col-sm-4 well">
-            <h3 style="text-align: center"><b>Hacer</b> (to do, to make)</h3>
-            <br>
-            <form role="form">
-
-                <div class="form-group row">
-                    <label for="irrconjq4_yo" class="col-sm-3" style="text-align: right">Yo</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq4_yo" style="width: 20%">
-                    <label for="irrconjq4_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq4_nos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="irrconjq4_tu" class="col-sm-3" style="text-align: right">Tú</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq4_tu" style="width: 20%">
-                    <label for="irrconjq4_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq4_vos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="irrconjq4_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq4_udelella" style="width: 20%">
-                    <label for="irrconjq4_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq4_udsloslas" style="width: 20%">
-                </div>
-
-                <br>
-                <button type="button" class="btn btn-primary btn-block" onclick="irrconjq4()">Submit</button>
-
-            </form>
-                        
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Yo</p>
-                <p id="irrconjq4_yo_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Tú</p>
-                <p id="irrconjq4_tu_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
-                <p id="irrconjq4_udelella_ans" class="col-sm-2"></p>
-            </div>
-
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Nosotros</p>
-                <p id="irrconjq4_nos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Vosotros</p>
-                <p id="irrconjq4_vos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
-                <p id="irrconjq4_udsloslas_ans" class="col-sm-2"></p>
-            </div>
-
-            <script>
-                function irrconjq4() {
-
-                    var icq4_yo = document.getElementById("irrconjq4_yo").value;
-                    var icq4_tu = document.getElementById("irrconjq4_tu").value;
-                    var icq4_udelella = document.getElementById("irrconjq4_udelella").value;
-                    var icq4_nos = document.getElementById("irrconjq4_nos").value;
-                    var icq4_vos = document.getElementById("irrconjq4_vos").value;
-                    var icq4_udsloslas = document.getElementById("irrconjq4_udsloslas").value;
-                    var icq4_yo_ans, icq4_tu_ans, icq4_udelella_ans, icq4_nos_ans, icq4_vos_ans, icq4_udsloslas_ans;
-
-                    if (icq4_yo == "hago" || icq4_yo == "Hago") {
-                        icq4_yo_ans = "CORRECT";
-                    } else {
-                        icq4_yo_ans = "INCORRECT";
-                    }
-
-                    if (icq4_tu == "haces" || icq4_tu == "Haces") {
-                        icq4_tu_ans = "CORRECT";
-                    } else {
-                        icq4_tu_ans = "INCORRECT";
-                    }
-
-                    if (icq4_udelella == "hace" || icq4_udelella == "Hace") {
-                        icq4_udelella_ans = "CORRECT";
-                    } else {
-                        icq4_udelella_ans = "INCORRECT";
-                    }
-
-                    if (icq4_nos == "hacemos" || icq4_nos == "Hacemos") {
-                        icq4_nos_ans = "CORRECT";
-                    } else {
-                        icq4_nos_ans = "INCORRECT";
-                    }
-
-                    if (icq4_vos == "hacéis" || icq4_vos == "Hacéis") {
-                        icq4_vos_ans = "CORRECT";
-                    } else {
-                        icq4_vos_ans = "INCORRECT";
-                    }
-
-                    if (icq4_udsloslas == "hacen" || icq4_udsloslas == "Hacen") {
-                        icq4_udsloslas_ans = "CORRECT";
-                    } else {
-                        icq4_udsloslas_ans = "INCORRECT";
-                    }
-
-                    document.getElementById("irrconjq4_yo_ans").innerHTML = icq4_yo_ans;
-                    document.getElementById("irrconjq4_tu_ans").innerHTML = icq4_tu_ans;
-                    document.getElementById("irrconjq4_udelella_ans").innerHTML = icq4_udelella_ans;
-                    document.getElementById("irrconjq4_nos_ans").innerHTML = icq4_nos_ans;
-                    document.getElementById("irrconjq4_vos_ans").innerHTML = icq4_vos_ans;
-                    document.getElementById("irrconjq4_udsloslas_ans").innerHTML = icq4_udsloslas_ans;
-                }
-            </script>
+                <!--BEGIN ROW 3-->
+                <div class="row">
+                <div class="col-sm-6 well" style="background: lightsteelblue">
+                    <br>
+                    <h3 style="text-align: center"><b>Ir</b> (to go)</h3>
+                    <br>
+                    <form role="form">
         
-        </div>
-
-        <div class="col-sm-4 well">
-            <h3 style="text-align: center"><b>Saber</b> (to know [a fact])</h3>
-            <br>
-            <form role="form">
-
-                <div class="form-group row">
-                    <label for="irrconjq5_yo" class="col-sm-3" style="text-align: right">Yo</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq5_yo" style="width: 20%">
-                    <label for="irrconjq5_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq5_nos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="irrconjq5_tu" class="col-sm-3" style="text-align: right">Tú</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq5_tu" style="width: 20%">
-                    <label for="irrconjq5_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq5_vos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="irrconjq5_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq5_udelella" style="width: 20%">
-                    <label for="irrconjq5_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq5_udsloslas" style="width: 20%">
-                </div>
-
-                <br>
-                <button type="button" class="btn btn-primary btn-block" onclick="irrconjq5()">Submit</button>
-
-            </form>
-                        
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Yo</p>
-                <p id="irrconjq5_yo_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Tú</p>
-                <p id="irrconjq5_tu_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
-                <p id="irrconjq5_udelella_ans" class="col-sm-2"></p>
-            </div>
-
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Nosotros</p>
-                <p id="irrconjq5_nos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Vosotros</p>
-                <p id="irrconjq5_vos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
-                <p id="irrconjq5_udsloslas_ans" class="col-sm-2"></p>
-            </div>
+                        <div class="form-group row">
+                            <label for="irrconjq1_yo" class="col-sm-3" style="text-align: right">Yo</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq1_yo" style="width: 20%">
+                            <label for="irrconjq1_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq1_nos" style="width: 20%">
+                        </div>
         
-            <script>
-                function irrconjq5() {
-
-                    var icq5_yo = document.getElementById("irrconjq5_yo").value;
-                    var icq5_tu = document.getElementById("irrconjq5_tu").value;
-                    var icq5_udelella = document.getElementById("irrconjq5_udelella").value;
-                    var icq5_nos = document.getElementById("irrconjq5_nos").value;
-                    var icq5_vos = document.getElementById("irrconjq5_vos").value;
-                    var icq5_udsloslas = document.getElementById("irrconjq5_udsloslas").value;
-                    var icq5_yo_ans, icq5_tu_ans, icq5_udelella_ans, icq5_nos_ans, icq5_vos_ans, icq5_udsloslas_ans;
-
-                    if (icq5_yo == "sé" || icq5_yo == "Sé") {
-                        icq5_yo_ans = "CORRECT";
-                    } else {
-                        icq5_yo_ans = "INCORRECT";
-                    }
-
-                    if (icq5_tu == "sabes" || icq5_tu == "Sabes") {
-                        icq5_tu_ans = "CORRECT";
-                    } else {
-                        icq5_tu_ans = "INCORRECT";
-                    }
-
-                    if (icq5_udelella == "sabe" || icq5_udelella == "Sabe") {
-                        icq5_udelella_ans = "CORRECT";
-                    } else {
-                        icq5_udelella_ans = "INCORRECT";
-                    }
-
-                    if (icq5_nos == "sabemos" || icq5_nos == "Sabemos") {
-                        icq5_nos_ans = "CORRECT";
-                    } else {
-                        icq5_nos_ans = "INCORRECT";
-                    }
-
-                    if (icq5_vos == "sabéis" || icq5_vos == "Sabéis") {
-                        icq5_vos_ans = "CORRECT";
-                    } else {
-                        icq5_vos_ans = "INCORRECT";
-                    }
-
-                    if (icq5_udsloslas == "saben" || icq5_udsloslas == "Saben") {
-                        icq5_udsloslas_ans = "CORRECT";
-                    } else {
-                        icq5_udsloslas_ans = "INCORRECT";
-                    }
-
-                    document.getElementById("irrconjq5_yo_ans").innerHTML = icq5_yo_ans;
-                    document.getElementById("irrconjq5_tu_ans").innerHTML = icq5_tu_ans;
-                    document.getElementById("irrconjq5_udelella_ans").innerHTML = icq5_udelella_ans;
-                    document.getElementById("irrconjq5_nos_ans").innerHTML = icq5_nos_ans;
-                    document.getElementById("irrconjq5_vos_ans").innerHTML = icq5_vos_ans;
-                    document.getElementById("irrconjq5_udsloslas_ans").innerHTML = icq5_udsloslas_ans;
-                }
-            </script>    
-
-        </div>
-
-        <div class="col-sm-4 well">
-            <h3 style="text-align: center"><b>Salir</b> (to leave)</h3>
-            <br>
-            <form role="form">
-
-                <div class="form-group row">
-                    <label for="irrconjq6_yo" class="col-sm-3" style="text-align: right">Yo</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq6_yo" style="width: 20%">
-                    <label for="irrconjq6_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq6_nos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="irrconjq6_tu" class="col-sm-3" style="text-align: right">Tú</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq6_tu" style="width: 20%">
-                    <label for="irrconjq6_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq6_vos" style="width: 20%">
-                </div>
-
-                <div class="form-group row">
-                    <label for="irrconjq6_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq6_udelella" style="width: 20%">
-                    <label for="irrconjq6_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
-                    <input type="text" class="form-control col-sm-3" id="irrconjq6_udsloslas" style="width: 20%">
-                </div>
-
-                <br>
-                <button type="button" class="btn btn-primary btn-block" onclick="irrconjq6()">Submit</button>
-            
-            </form>   
-                        
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Yo</p>
-                <p id="irrconjq6_yo_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Tú</p>
-                <p id="irrconjq6_tu_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
-                <p id="irrconjq6_udelella_ans" class="col-sm-2"></p>
-            </div>
-
-            <div class="row">
-                <p class="col-sm-2" style="text-align: right">Nosotros</p>
-                <p id="irrconjq6_nos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Vosotros</p>
-                <p id="irrconjq6_vos_ans" class="col-sm-2"></p>
-                <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
-                <p id="irrconjq6_udsloslas_ans" class="col-sm-2"></p>
-            </div>
-
-            <script>
-                function irrconjq6() {
-
-                    var icq6_yo = document.getElementById("irrconjq6_yo").value;
-                    var icq6_tu = document.getElementById("irrconjq6_tu").value;
-                    var icq6_udelella = document.getElementById("irrconjq6_udelella").value;
-                    var icq6_nos = document.getElementById("irrconjq6_nos").value;
-                    var icq6_vos = document.getElementById("irrconjq6_vos").value;
-                    var icq6_udsloslas = document.getElementById("irrconjq6_udsloslas").value;
-                    var icq6_yo_ans, icq6_tu_ans, icq6_udelella_ans, icq6_nos_ans, icq6_vos_ans, icq6_udsloslas_ans;
-
-                    if (icq6_yo == "salgo" || icq6_yo == "Salgo") {
-                        icq6_yo_ans = "CORRECT";
-                    } else {
-                        icq6_yo_ans = "INCORRECT";
-                    }
-
-                    if (icq6_tu == "Sales" || icq6_tu == "sales") {
-                        icq6_tu_ans = "CORRECT";
-                    } else {
-                        icq6_tu_ans = "INCORRECT";
-                    }
-
-                    if (icq6_udelella == "Sale" || icq6_udelella == "sale") {
-                        icq6_udelella_ans = "CORRECT";
-                    } else {
-                        icq6_udelella_ans = "INCORRECT";
-                    }
-
-                    if (icq6_nos == "Salimos" || icq6_nos == "salimos") {
-                        icq6_nos_ans = "CORRECT";
-                    } else {
-                        icq6_nos_ans = "INCORRECT";
-                    }
-
-                    if (icq6_vos == "Salís" || icq6_vos == "salís") {
-                        icq6_vos_ans = "CORRECT";
-                    } else {
-                        icq6_vos_ans = "INCORRECT";
-                    }
-
-                    if (icq6_udsloslas == "Salen" || icq6_udsloslas == "salen") {
-                        icq6_udsloslas_ans = "CORRECT";
-                    } else {
-                        icq6_udsloslas_ans = "INCORRECT";
-                    }
-
-                    document.getElementById("irrconjq6_yo_ans").innerHTML = icq6_yo_ans;
-                    document.getElementById("irrconjq6_tu_ans").innerHTML = icq6_tu_ans;
-                    document.getElementById("irrconjq6_udelella_ans").innerHTML = icq6_udelella_ans;
-                    document.getElementById("irrconjq6_nos_ans").innerHTML = icq6_nos_ans;
-                    document.getElementById("irrconjq6_vos_ans").innerHTML = icq6_vos_ans;
-                    document.getElementById("irrconjq6_udsloslas_ans").innerHTML = icq6_udsloslas_ans;
-                }
-            </script>
-        </div>    
-        <!--ROW 4 END-->
+                        <div class="form-group row">
+                            <label for="irrconjq1_tu" class="col-sm-3" style="text-align: right">Tú</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq1_tu" style="width: 20%">
+                            <label for="irrconjq1_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq1_vos" style="width: 20%">
+                        </div>
         
-        <!--
-        <br>
-        <br>
-        <h2 style="padding-left: 10px"><u>Ser</u> and <u>Estar</u></h2>
-        <p style="padding-left: 10px">Complete the following tables with the appropriate conjugations. <b>Make sure to add accents</b> where applicable. </p>
-        -->
-    </body>
-</html>
+                        <div class="form-group row">
+                            <label for="irrconjq1_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq1_udelella" style="width: 20%">
+                            <label for="irrconjq1_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq1_udsloslas" style="width: 20%">
+                        </div>
+        
+                        <br>
+                        <button type="button" class="btn btn-primary btn-block" onclick="irrconjq1()">Submit</button>
+        
+                    </form>
+                                
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Yo</p>
+                        <p id="irrconjq1_yo_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Tú</p>
+                        <p id="irrconjq1_tu_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
+                        <p id="irrconjq1_udelella_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Nosotros</p>
+                        <p id="irrconjq1_nos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Vosotros</p>
+                        <p id="irrconjq1_vos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
+                        <p id="irrconjq1_udsloslas_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <script>
+                        function irrconjq1() {
+        
+                            var icq1_yo = document.getElementById("irrconjq1_yo").value;
+                            var icq1_tu = document.getElementById("irrconjq1_tu").value;
+                            var icq1_udelella = document.getElementById("irrconjq1_udelella").value;
+                            var icq1_nos = document.getElementById("irrconjq1_nos").value;
+                            var icq1_vos = document.getElementById("irrconjq1_vos").value;
+                            var icq1_udsloslas = document.getElementById("irrconjq1_udsloslas").value;
+                            var icq1_yo_ans, icq1_tu_ans, icq1_udelella_ans, icq1_nos_ans, icq1_vos_ans, icq1_udsloslas_ans;
+        
+                            if (icq1_yo == "voy" || icq1_yo == "Voy") {
+                                icq1_yo_ans = "CORRECT";
+                            } else {
+                                icq1_yo_ans = "INCORRECT";
+                            }
+        
+                            if (icq1_tu == "vas" || icq1_tu == "Vas") {
+                                icq1_tu_ans = "CORRECT";
+                            } else {
+                                icq1_tu_ans = "INCORRECT";
+                            }
+        
+                            if (icq1_udelella == "va" || icq1_udelella == "Va") {
+                                icq1_udelella_ans = "CORRECT";
+                            } else {
+                                icq1_udelella_ans = "INCORRECT";
+                            }
+        
+                            if (icq1_nos == "vamos" || icq1_nos == "Vamos") {
+                                icq1_nos_ans = "CORRECT";
+                            } else {
+                                icq1_nos_ans = "INCORRECT";
+                            }
+        
+                            if (icq1_vos == "vais" || icq1_vos == "Vais") {
+                                icq1_vos_ans = "CORRECT";
+                            } else {
+                                icq1_vos_ans = "INCORRECT";
+                            }
+        
+                            if (icq1_udsloslas == "van" || icq1_udsloslas == "Van") {
+                                icq1_udsloslas_ans = "CORRECT";
+                            } else {
+                                icq1_udsloslas_ans = "INCORRECT";
+                            }
+        
+                            document.getElementById("irrconjq1_yo_ans").innerHTML = icq1_yo_ans;
+                            document.getElementById("irrconjq1_tu_ans").innerHTML = icq1_tu_ans;
+                            document.getElementById("irrconjq1_udelella_ans").innerHTML = icq1_udelella_ans;
+                            document.getElementById("irrconjq1_nos_ans").innerHTML = icq1_nos_ans;
+                            document.getElementById("irrconjq1_vos_ans").innerHTML = icq1_vos_ans;
+                            document.getElementById("irrconjq1_udsloslas_ans").innerHTML = icq1_udsloslas_ans;
+                        }
+                    </script>
+                
+                </div>
+        
+                <div class="col-sm-6 well" style="background: lightsteelblue">
+                        <br>
+                    <h3 style="text-align: center"><b>Tener</b> (to have)</h3>
+                    <br>
+                    <form role="form">
+        
+                        <div class="form-group row">
+                            <label for="irrconjq2_yo" class="col-sm-3" style="text-align: right">Yo</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq2_yo" style="width: 20%">
+                            <label for="irrconjq2_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq2_nos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="irrconjq2_tu" class="col-sm-3" style="text-align: right">Tú</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq2_tu" style="width: 20%">
+                            <label for="irrconjq2_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq2_vos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="irrconjq2_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq2_udelella" style="width: 20%">
+                            <label for="irrconjq2_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq2_udsloslas" style="width: 20%">
+                        </div>
+        
+                        <br>
+                        <button type="button" class="btn btn-primary btn-block" onclick="irrconjq2()">Submit</button>
+        
+                    </form>
+                                
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Yo</p>
+                        <p id="irrconjq2_yo_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Tú</p>
+                        <p id="irrconjq2_tu_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
+                        <p id="irrconjq2_udelella_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Nosotros</p>
+                        <p id="irrconjq2_nos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Vosotros</p>
+                        <p id="irrconjq2_vos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
+                        <p id="irrconjq2_udsloslas_ans" class="col-sm-2"></p>
+                    </div>
+                
+                    <script>
+                        function irrconjq2() {
+        
+                            var icq2_yo = document.getElementById("irrconjq2_yo").value;
+                            var icq2_tu = document.getElementById("irrconjq2_tu").value;
+                            var icq2_udelella = document.getElementById("irrconjq2_udelella").value;
+                            var icq2_nos = document.getElementById("irrconjq2_nos").value;
+                            var icq2_vos = document.getElementById("irrconjq2_vos").value;
+                            var icq2_udsloslas = document.getElementById("irrconjq2_udsloslas").value;
+                            var icq2_yo_ans, icq2_tu_ans, icq2_udelella_ans, icq2_nos_ans, icq2_vos_ans, icq2_udsloslas_ans;
+        
+                            if (icq2_yo == "tengo" || icq2_yo == "Tengo") {
+                                icq2_yo_ans = "CORRECT";
+                            } else {
+                                icq2_yo_ans = "INCORRECT";
+                            }
+        
+                            if (icq2_tu == "tienes" || icq2_tu == "Tienes") {
+                                icq2_tu_ans = "CORRECT";
+                            } else {
+                                icq2_tu_ans = "INCORRECT";
+                            }
+        
+                            if (icq2_udelella == "tiene" || icq2_udelella == "Tiene") {
+                                icq2_udelella_ans = "CORRECT";
+                            } else {
+                                icq2_udelella_ans = "INCORRECT";
+                            }
+        
+                            if (icq2_nos == "tenemos" || icq2_nos == "Tenemos") {
+                                icq2_nos_ans = "CORRECT";
+                            } else {
+                                icq2_nos_ans = "INCORRECT";
+                            }
+        
+                            if (icq2_vos == "tenéis" || icq2_vos == "Tenéis") {
+                                icq2_vos_ans = "CORRECT";
+                            } else {
+                                icq2_vos_ans = "INCORRECT";
+                            }
+        
+                            if (icq2_udsloslas == "tienen" || icq2_udsloslas == "Tienen") {
+                                icq2_udsloslas_ans = "CORRECT";
+                            } else {
+                                icq2_udsloslas_ans = "INCORRECT";
+                            }
+        
+                            document.getElementById("irrconjq2_yo_ans").innerHTML = icq2_yo_ans;
+                            document.getElementById("irrconjq2_tu_ans").innerHTML = icq2_tu_ans;
+                            document.getElementById("irrconjq2_udelella_ans").innerHTML = icq2_udelella_ans;
+                            document.getElementById("irrconjq2_nos_ans").innerHTML = icq2_nos_ans;
+                            document.getElementById("irrconjq2_vos_ans").innerHTML = icq2_vos_ans;
+                            document.getElementById("irrconjq2_udsloslas_ans").innerHTML = icq2_udsloslas_ans;
+                        }
+                    </script>    
+        
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 well" style="background: lightgrey">
+                        <br>
+                    <h3 style="text-align: center"><b>Querer</b> (to want, to love)</h3>
+                    <br>
+                    <form role="form">
+        
+                        <div class="form-group row">
+                            <label for="irrconjq3_yo" class="col-sm-3" style="text-align: right">Yo</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq3_yo" style="width: 20%">
+                            <label for="irrconjq3_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq3_nos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="irrconjq3_tu" class="col-sm-3" style="text-align: right">Tú</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq3_tu" style="width: 20%">
+                            <label for="irrconjq3_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq3_vos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="irrconjq3_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq3_udelella" style="width: 20%">
+                            <label for="irrconjq3_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq3_udsloslas" style="width: 20%">
+                        </div>
+        
+                        <br>
+                        <button type="button" class="btn btn-primary btn-block" onclick="irrconjq3()">Submit</button>
+                    
+                    </form>   
+                                
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Yo</p>
+                        <p id="irrconjq3_yo_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Tú</p>
+                        <p id="irrconjq3_tu_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
+                        <p id="irrconjq3_udelella_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Nosotros</p>
+                        <p id="irrconjq3_nos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Vosotros</p>
+                        <p id="irrconjq3_vos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
+                        <p id="irrconjq3_udsloslas_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <script>
+                        function irrconjq3() {
+        
+                            var icq3_yo = document.getElementById("irrconjq3_yo").value;
+                            var icq3_tu = document.getElementById("irrconjq3_tu").value;
+                            var icq3_udelella = document.getElementById("irrconjq3_udelella").value;
+                            var icq3_nos = document.getElementById("irrconjq3_nos").value;
+                            var icq3_vos = document.getElementById("irrconjq3_vos").value;
+                            var icq3_udsloslas = document.getElementById("irrconjq3_udsloslas").value;
+                            var icq3_yo_ans, icq3_tu_ans, icq3_udelella_ans, icq3_nos_ans, icq3_vos_ans, icq3_udsloslas_ans;
+        
+                            if (icq3_yo == "quiero" || icq3_yo == "Quiero") {
+                                icq3_yo_ans = "CORRECT";
+                            } else {
+                                icq3_yo_ans = "INCORRECT";
+                            }
+        
+                            if (icq3_tu == "quieres" || icq3_tu == "Quieres") {
+                                icq3_tu_ans = "CORRECT";
+                            } else {
+                                icq3_tu_ans = "INCORRECT";
+                            }
+        
+                            if (icq3_udelella == "quiere" || icq3_udelella == "Quiere") {
+                                icq3_udelella_ans = "CORRECT";
+                            } else {
+                                icq3_udelella_ans = "INCORRECT";
+                            }
+        
+                            if (icq3_nos == "queremos" || icq3_nos == "Queremos") {
+                                icq3_nos_ans = "CORRECT";
+                            } else {
+                                icq3_nos_ans = "INCORRECT";
+                            }
+        
+                            if (icq3_vos == "queréis" || icq3_vos == "Queréis") {
+                                icq3_vos_ans = "CORRECT";
+                            } else {
+                                icq3_vos_ans = "INCORRECT";
+                            }
+        
+                            if (icq3_udsloslas == "quieren" || icq3_udsloslas == "Quieren") {
+                                icq3_udsloslas_ans = "CORRECT";
+                            } else {
+                                icq3_udsloslas_ans = "INCORRECT";
+                            }
+        
+                            document.getElementById("irrconjq3_yo_ans").innerHTML = icq3_yo_ans;
+                            document.getElementById("irrconjq3_tu_ans").innerHTML = icq3_tu_ans;
+                            document.getElementById("irrconjq3_udelella_ans").innerHTML = icq3_udelella_ans;
+                            document.getElementById("irrconjq3_nos_ans").innerHTML = icq3_nos_ans;
+                            document.getElementById("irrconjq3_vos_ans").innerHTML = icq3_vos_ans;
+                            document.getElementById("irrconjq3_udsloslas_ans").innerHTML = icq3_udsloslas_ans;
+                        }
+                    </script>
+                </div>    
+                <!--ROW 3 END-->
+        
+        
+                <!--BEGIN ROW 4-->
+                <div class="col-sm-6 well" style="background: lightgray">
+                        <br>
+                    <h3 style="text-align: center"><b>Hacer</b> (to do, to make)</h3>
+                    <br>
+                    <form role="form">
+        
+                        <div class="form-group row">
+                            <label for="irrconjq4_yo" class="col-sm-3" style="text-align: right">Yo</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq4_yo" style="width: 20%">
+                            <label for="irrconjq4_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq4_nos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="irrconjq4_tu" class="col-sm-3" style="text-align: right">Tú</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq4_tu" style="width: 20%">
+                            <label for="irrconjq4_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq4_vos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="irrconjq4_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq4_udelella" style="width: 20%">
+                            <label for="irrconjq4_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq4_udsloslas" style="width: 20%">
+                        </div>
+        
+                        <br>
+                        <button type="button" class="btn btn-primary btn-block" onclick="irrconjq4()">Submit</button>
+        
+                    </form>
+                                
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Yo</p>
+                        <p id="irrconjq4_yo_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Tú</p>
+                        <p id="irrconjq4_tu_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
+                        <p id="irrconjq4_udelella_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Nosotros</p>
+                        <p id="irrconjq4_nos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Vosotros</p>
+                        <p id="irrconjq4_vos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
+                        <p id="irrconjq4_udsloslas_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <script>
+                        function irrconjq4() {
+        
+                            var icq4_yo = document.getElementById("irrconjq4_yo").value;
+                            var icq4_tu = document.getElementById("irrconjq4_tu").value;
+                            var icq4_udelella = document.getElementById("irrconjq4_udelella").value;
+                            var icq4_nos = document.getElementById("irrconjq4_nos").value;
+                            var icq4_vos = document.getElementById("irrconjq4_vos").value;
+                            var icq4_udsloslas = document.getElementById("irrconjq4_udsloslas").value;
+                            var icq4_yo_ans, icq4_tu_ans, icq4_udelella_ans, icq4_nos_ans, icq4_vos_ans, icq4_udsloslas_ans;
+        
+                            if (icq4_yo == "hago" || icq4_yo == "Hago") {
+                                icq4_yo_ans = "CORRECT";
+                            } else {
+                                icq4_yo_ans = "INCORRECT";
+                            }
+        
+                            if (icq4_tu == "haces" || icq4_tu == "Haces") {
+                                icq4_tu_ans = "CORRECT";
+                            } else {
+                                icq4_tu_ans = "INCORRECT";
+                            }
+        
+                            if (icq4_udelella == "hace" || icq4_udelella == "Hace") {
+                                icq4_udelella_ans = "CORRECT";
+                            } else {
+                                icq4_udelella_ans = "INCORRECT";
+                            }
+        
+                            if (icq4_nos == "hacemos" || icq4_nos == "Hacemos") {
+                                icq4_nos_ans = "CORRECT";
+                            } else {
+                                icq4_nos_ans = "INCORRECT";
+                            }
+        
+                            if (icq4_vos == "hacéis" || icq4_vos == "Hacéis") {
+                                icq4_vos_ans = "CORRECT";
+                            } else {
+                                icq4_vos_ans = "INCORRECT";
+                            }
+        
+                            if (icq4_udsloslas == "hacen" || icq4_udsloslas == "Hacen") {
+                                icq4_udsloslas_ans = "CORRECT";
+                            } else {
+                                icq4_udsloslas_ans = "INCORRECT";
+                            }
+        
+                            document.getElementById("irrconjq4_yo_ans").innerHTML = icq4_yo_ans;
+                            document.getElementById("irrconjq4_tu_ans").innerHTML = icq4_tu_ans;
+                            document.getElementById("irrconjq4_udelella_ans").innerHTML = icq4_udelella_ans;
+                            document.getElementById("irrconjq4_nos_ans").innerHTML = icq4_nos_ans;
+                            document.getElementById("irrconjq4_vos_ans").innerHTML = icq4_vos_ans;
+                            document.getElementById("irrconjq4_udsloslas_ans").innerHTML = icq4_udsloslas_ans;
+                        }
+                    </script>
+                
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 well" style="background: lightsteelblue">
+                        <br>
+                    <h3 style="text-align: center"><b>Saber</b> (to know [a fact])</h3>
+                    <br>
+                    <form role="form">
+        
+                        <div class="form-group row">
+                            <label for="irrconjq5_yo" class="col-sm-3" style="text-align: right">Yo</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq5_yo" style="width: 20%">
+                            <label for="irrconjq5_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq5_nos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="irrconjq5_tu" class="col-sm-3" style="text-align: right">Tú</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq5_tu" style="width: 20%">
+                            <label for="irrconjq5_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq5_vos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="irrconjq5_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq5_udelella" style="width: 20%">
+                            <label for="irrconjq5_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq5_udsloslas" style="width: 20%">
+                        </div>
+        
+                        <br>
+                        <button type="button" class="btn btn-primary btn-block" onclick="irrconjq5()">Submit</button>
+        
+                    </form>
+                                
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Yo</p>
+                        <p id="irrconjq5_yo_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Tú</p>
+                        <p id="irrconjq5_tu_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
+                        <p id="irrconjq5_udelella_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Nosotros</p>
+                        <p id="irrconjq5_nos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Vosotros</p>
+                        <p id="irrconjq5_vos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
+                        <p id="irrconjq5_udsloslas_ans" class="col-sm-2"></p>
+                    </div>
+                
+                    <script>
+                        function irrconjq5() {
+        
+                            var icq5_yo = document.getElementById("irrconjq5_yo").value;
+                            var icq5_tu = document.getElementById("irrconjq5_tu").value;
+                            var icq5_udelella = document.getElementById("irrconjq5_udelella").value;
+                            var icq5_nos = document.getElementById("irrconjq5_nos").value;
+                            var icq5_vos = document.getElementById("irrconjq5_vos").value;
+                            var icq5_udsloslas = document.getElementById("irrconjq5_udsloslas").value;
+                            var icq5_yo_ans, icq5_tu_ans, icq5_udelella_ans, icq5_nos_ans, icq5_vos_ans, icq5_udsloslas_ans;
+        
+                            if (icq5_yo == "sé" || icq5_yo == "Sé") {
+                                icq5_yo_ans = "CORRECT";
+                            } else {
+                                icq5_yo_ans = "INCORRECT";
+                            }
+        
+                            if (icq5_tu == "sabes" || icq5_tu == "Sabes") {
+                                icq5_tu_ans = "CORRECT";
+                            } else {
+                                icq5_tu_ans = "INCORRECT";
+                            }
+        
+                            if (icq5_udelella == "sabe" || icq5_udelella == "Sabe") {
+                                icq5_udelella_ans = "CORRECT";
+                            } else {
+                                icq5_udelella_ans = "INCORRECT";
+                            }
+        
+                            if (icq5_nos == "sabemos" || icq5_nos == "Sabemos") {
+                                icq5_nos_ans = "CORRECT";
+                            } else {
+                                icq5_nos_ans = "INCORRECT";
+                            }
+        
+                            if (icq5_vos == "sabéis" || icq5_vos == "Sabéis") {
+                                icq5_vos_ans = "CORRECT";
+                            } else {
+                                icq5_vos_ans = "INCORRECT";
+                            }
+        
+                            if (icq5_udsloslas == "saben" || icq5_udsloslas == "Saben") {
+                                icq5_udsloslas_ans = "CORRECT";
+                            } else {
+                                icq5_udsloslas_ans = "INCORRECT";
+                            }
+        
+                            document.getElementById("irrconjq5_yo_ans").innerHTML = icq5_yo_ans;
+                            document.getElementById("irrconjq5_tu_ans").innerHTML = icq5_tu_ans;
+                            document.getElementById("irrconjq5_udelella_ans").innerHTML = icq5_udelella_ans;
+                            document.getElementById("irrconjq5_nos_ans").innerHTML = icq5_nos_ans;
+                            document.getElementById("irrconjq5_vos_ans").innerHTML = icq5_vos_ans;
+                            document.getElementById("irrconjq5_udsloslas_ans").innerHTML = icq5_udsloslas_ans;
+                        }
+                    </script>    
+        
+                </div>
+        
+                <div class="col-sm-6 well" style="background: lightsteelblue">
+                        <br>
+                    <h3 style="text-align: center"><b>Salir</b> (to leave)</h3>
+                    <br>
+                    <form role="form">
+        
+                        <div class="form-group row">
+                            <label for="irrconjq6_yo" class="col-sm-3" style="text-align: right">Yo</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq6_yo" style="width: 20%">
+                            <label for="irrconjq6_nos" class="col-sm-3" style="text-align: right">Nosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq6_nos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="irrconjq6_tu" class="col-sm-3" style="text-align: right">Tú</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq6_tu" style="width: 20%">
+                            <label for="irrconjq6_vos" class="col-sm-3" style="text-align: right">Vosotros</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq6_vos" style="width: 20%">
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="irrconjq6_udelella" class="col-sm-3" style="text-align: right">Usted, Él, Ella</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq6_udelella" style="width: 20%">
+                            <label for="irrconjq6_udsloslas" class="col-sm-3" style="text-align: right">Usted, Ellos, Ellas</label>
+                            <input type="text" class="form-control col-sm-2" id="irrconjq6_udsloslas" style="width: 20%">
+                        </div>
+        
+                        <br>
+                        <button type="button" class="btn btn-primary btn-block" onclick="irrconjq6()">Submit</button>
+                    
+                    </form>   
+                                
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Yo</p>
+                        <p id="irrconjq6_yo_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Tú</p>
+                        <p id="irrconjq6_tu_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Ud, Él, Ella</p>
+                        <p id="irrconjq6_udelella_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <div class="row">
+                        <p class="col-sm-2" style="text-align: right">Nosotros</p>
+                        <p id="irrconjq6_nos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Vosotros</p>
+                        <p id="irrconjq6_vos_ans" class="col-sm-2"></p>
+                        <p class="col-sm-2" style="text-align: right">Uds, Ellos, Ellas</p>
+                        <p id="irrconjq6_udsloslas_ans" class="col-sm-2"></p>
+                    </div>
+        
+                    <script>
+                        function irrconjq6() {
+        
+                            var icq6_yo = document.getElementById("irrconjq6_yo").value;
+                            var icq6_tu = document.getElementById("irrconjq6_tu").value;
+                            var icq6_udelella = document.getElementById("irrconjq6_udelella").value;
+                            var icq6_nos = document.getElementById("irrconjq6_nos").value;
+                            var icq6_vos = document.getElementById("irrconjq6_vos").value;
+                            var icq6_udsloslas = document.getElementById("irrconjq6_udsloslas").value;
+                            var icq6_yo_ans, icq6_tu_ans, icq6_udelella_ans, icq6_nos_ans, icq6_vos_ans, icq6_udsloslas_ans;
+        
+                            if (icq6_yo == "salgo" || icq6_yo == "Salgo") {
+                                icq6_yo_ans = "CORRECT";
+                            } else {
+                                icq6_yo_ans = "INCORRECT";
+                            }
+        
+                            if (icq6_tu == "Sales" || icq6_tu == "sales") {
+                                icq6_tu_ans = "CORRECT";
+                            } else {
+                                icq6_tu_ans = "INCORRECT";
+                            }
+        
+                            if (icq6_udelella == "Sale" || icq6_udelella == "sale") {
+                                icq6_udelella_ans = "CORRECT";
+                            } else {
+                                icq6_udelella_ans = "INCORRECT";
+                            }
+        
+                            if (icq6_nos == "Salimos" || icq6_nos == "salimos") {
+                                icq6_nos_ans = "CORRECT";
+                            } else {
+                                icq6_nos_ans = "INCORRECT";
+                            }
+        
+                            if (icq6_vos == "Salís" || icq6_vos == "salís") {
+                                icq6_vos_ans = "CORRECT";
+                            } else {
+                                icq6_vos_ans = "INCORRECT";
+                            }
+        
+                            if (icq6_udsloslas == "Salen" || icq6_udsloslas == "salen") {
+                                icq6_udsloslas_ans = "CORRECT";
+                            } else {
+                                icq6_udsloslas_ans = "INCORRECT";
+                            }
+        
+                            document.getElementById("irrconjq6_yo_ans").innerHTML = icq6_yo_ans;
+                            document.getElementById("irrconjq6_tu_ans").innerHTML = icq6_tu_ans;
+                            document.getElementById("irrconjq6_udelella_ans").innerHTML = icq6_udelella_ans;
+                            document.getElementById("irrconjq6_nos_ans").innerHTML = icq6_nos_ans;
+                            document.getElementById("irrconjq6_vos_ans").innerHTML = icq6_vos_ans;
+                            document.getElementById("irrconjq6_udsloslas_ans").innerHTML = icq6_udsloslas_ans;
+                        }
+                    </script>
+                </div>    
+            </div>
+                <!--ROW 4 END-->
+                
+                <!--
+                <br>
+                <br>
+                <h2 style="padding-left: 10px"><u>Ser</u> and <u>Estar</u></h2>
+                <p style="padding-left: 10px">Complete the following tables with the appropriate conjugations. <b>Make sure to add accents</b> where applicable. </p>
+                -->
+            </body>
+        </html>
+        
